@@ -4,3 +4,8 @@
 
 ## Running springboot application with external configs
     docker run -p 3000:3000 docker-springboot:1  --server.port=3000
+
+## Accepting args in shell command
+`#!/bin/sh`
+
+`exec java ${JAVA_OPTS} -jar /app.jar ${@}`
